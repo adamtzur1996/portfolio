@@ -1,0 +1,81 @@
+.about-me-section {
+    background-color: #fff;
+    overflow: auto;
+    .main-container {
+        width: 95%;
+        margin: 0 auto;
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            padding-bottom: 50px;
+            padding-top: 50px;
+            gap: 100px;
+
+            .about-me {
+                h4 {
+                    font-size: 24px;
+                    font-family: 'Russo One', sans-serif;
+                    font-weight: 600;
+                    color: black;
+                }
+                p {
+                    font-family: 'Roboto Mono', monospace;
+                    color: #4b5156;
+                    position: relative;
+                    .company-name {
+                        text-decoration: none;
+                        color: #009F69;
+                        transition: all 500ms;
+                        &:hover{
+                            position: absolute;
+                            font-size:20px;
+                            font-size-adjust: 20px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                .title {
+                    font-family: 'Roboto Mono', monospace;
+                    color: #4b5156;
+                    a {
+                        color: #17a2b8;
+                        text-decoration: none;
+                    }
+                }
+                .skills {
+                    display: flex;
+                    justify-content: space-evenly;
+                    background-color: #f0ead6;
+                    border-radius: 8px;
+                    ul {
+                        list-style-type: none;
+                        li{
+                            color: #4b5156;
+                            font-family: 'Roboto Mono', monospace;
+                            padding: 4px;
+                        }
+                    }
+                }
+            }
+
+            .social-links {
+                display: grid;
+                align-content: center;
+                text-align: center;
+                h3 {
+                    font-size: 28px;
+                    font-family: 'Russo One', sans-serif;
+                    font-weight: 500;
+                }
+                .social-img {
+                    padding-bottom: 50px;
+                    width: 100%;
+                }
+                a {
+                    text-decoration: none;
+                    color: #17a2b8;
+                }
+            }
+        }
+    }
+}

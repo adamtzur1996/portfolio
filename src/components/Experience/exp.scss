@@ -1,0 +1,77 @@
+.experience-container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 45px auto;
+    .inner-container{
+        display: flex;
+        max-width: 1000px;
+        margin: auto;
+        width: 100%;
+        .left-side {
+            flex: 0 0 33.333333%;
+            .pill-shape::before{
+                    content: '';
+                    height: 10px;
+                    width: 50px;
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                    display: block;
+                    background: #FFA804;
+            }
+            .heading {
+                h1 {}
+                p {}
+            }
+        }
+
+        .right-side::after{
+            content: '';
+            position: absolute;
+            top: 27px;
+            bottom: 0px;
+            left: -51px;
+            width: 2px;
+            background: #ccc;
+            :last-child{
+                bottom: 0px;
+            }
+        }
+        .right-side {
+            position: relative;
+            flex: 0 0 66.333337%;
+            .job {
+                position: relative;
+                padding-bottom: 20px;
+                .job-title {
+                    &:hover {
+                        color: #FFA600;
+                    }
+                }
+                .description {
+                    .projects-list {
+                        list-style-type: none;
+                    }
+                    .position {
+                        color: #FFA600;
+                        font-weight: 600;
+                    }
+                    .job-duration {
+                        color: #999999;
+                    }
+                }   
+            }
+            .job::after{
+                content: '';
+                position: absolute;
+                top: 8px;
+                left: -58px;
+                width: 16px;
+                height: 16px;
+                border-radius: 10px;
+                z-index: 1;
+                box-shadow: 0 0 0 8px rgb(255 171 0 / 40%);
+                background: #FFAB00;
+            }
+        }
+    }
+}

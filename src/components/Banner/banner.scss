@@ -1,0 +1,86 @@
+.banner-section {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    .banner-mask {
+        z-index: 1;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: #111418;
+        opacity: 0.5;
+    }
+    .banner-wrapper {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        background: url('./images/background.webp')  no-repeat center center fixed;
+        transition: background-image .3s ease-in .2s;
+        background-size: cover;
+        z-index: 0;
+    }
+    .intro-text {
+        position: relative;
+        color: #fff;
+        z-index: 2;
+        overflow: hidden;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        width: 600px;
+       h1 {
+        font-size: 50px;
+        font-weight: 500;
+       }
+       h3 {
+        font-size: 40px;
+       }
+       h5 {
+        font-size: 30px;
+       }
+        span.blue {
+            color: rgb(73, 125, 228);
+        }
+        .blinking-cursor::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from,
+            to {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    }
+    .connect-with-me {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        padding: 40px 5px;
+        overflow: hidden;
+        input {
+            padding: 20px 20px 20px 15px;
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 30px;
+        }
+        button {
+            padding: 12px;
+            border: 1px solid rgb(73, 125, 228);
+            background-color: rgb(73, 125, 228);
+            color: white;
+        }
+    }
+}
